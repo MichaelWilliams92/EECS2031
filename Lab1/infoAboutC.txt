@@ -1,0 +1,129 @@
+C programming language
+From Wikipedia, the free encyclopedia
+
+C is a general-purpose computer programming language developed in 1972 
+by Dennis Ritchie at the Bell Telephone Laboratories for use with the 
+Unix operating system.[2]
+
+Although C was designed for implementing system software,[3] it is also 
+widely used for developing portable application software.
+
+C is one of the most popular programming languages.[4][5] It is widely 
+used on many different software platforms, and there are few computer 
+architectures for which a C compiler does not exist. C has greatly 
+influenced many other popular programming languages, most notably C++, 
+which originally began as an extension to C.
+
+Design
+C is an imperative (procedural) systems implementation language. It was 
+designed to be compiled using a relatively straightforward compiler, to 
+provide low-level access to memory, to provide language constructs that 
+map efficiently to machine instructions, and to require minimal 
+run-time support. C was therefore useful for many applications that had 
+formerly been coded in assembly language.
+
+Despite its low-level capabilities, the language was designed to 
+encourage machine-independent programming. A standards-compliant and 
+portably written C program can be compiled for a very wide variety of 
+computer platforms and operating systems with little or no change to 
+its source code. The language has become available on a very wide 
+range of platforms, from embedded microcontrollers to supercomputers.
+
+Minimalism
+C's design is tied to its intended use as a portable systems 
+implementation language. It provides simple, direct access to any 
+addressable object (for example, memory-mapped device control 
+registers), and its source-code expressions can be translated in a 
+straightforward manner to primitive machine operations in the 
+executable code. Some early C compilers were comfortably implemented 
+(as a few distinct passes communicating via intermediate files) on 
+PDP-11 processors having only 16 address bits. C compilers for several 
+common 8-bit platforms have been implemented as well.
+
+Characteristics
+Like most imperative languages in the ALGOL tradition, C has 
+facilities for structured programming and allows lexical variable 
+scope and recursion, while a static type system prevents many 
+unintended operations. In C, all executable code is contained 
+within functions. Function parameters are always passed by value. 
+Pass-by-reference is simulated in C by explicitly passing pointer 
+values. Heterogeneous aggregate data types (struct) allow related 
+data elements to be combined and manipulated as a unit. C program 
+source text is free-format, using the semicolon as a statement 
+terminator (not a delimiter).
+
+C also exhibits the following more specific characteristics:
+
+ - lack of nested function definitions 
+ - variables may be hidden in nested blocks 
+ - partially weak typing; for instance, characters can be used as 
+integers 
+ - low-level access to computer memory by converting machine 
+addresses to typed pointers 
+ - function and data pointers supporting ad hoc run-time 
+polymorphism 
+ - array indexing as a secondary notion, defined in terms of 
+pointer arithmetic 
+ - a preprocessor for macro definition, source code file inclusion, 
+and conditional compilation 
+ - complex functionality such as I/O, string manipulation, and 
+mathematical functions consistently delegated to library routines 
+ - A relatively small set of reserved keywords 
+ - A lexical structure that resembles B more than ALGOL, for example: 
+{ ... } rather than either of ALGOL 60's begin ... end or ALGOL 68's 
+( ... ) 
+ - = is used for assignment (copying), like Fortran, rather than 
+ALGOL's := 
+ - == is used to test for equality (rather than .EQ. in Fortran, 
+or = in BASIC and ALGOL) 
+ - && and || in place of ALGOL's "." (AND) and "." (OR); note that 
+the doubled-up operators will never evaluate the right operand if 
+the result can be determined from the left alone (this is called 
+short-circuit evaluation), and are semantically distinct from the 
+bit-wise operators & and | 
+ - a large number of compound operators, such as +=, ++, etc. 
+(Equivalent to ALGOL 68's +:= and +:=1 operators
+
+Absent features
+The relatively low-level nature of the language affords the 
+programmer close control over what the computer does, while allowing 
+special tailoring and aggressive optimization for a particular 
+platform. This allows the code to run efficiently on very limited 
+hardware, such as embedded systems.
+
+C does not have some features that are available in some other 
+programming languages:
+
+No direct assignment of arrays or strings (copying can be done via 
+standard functions; assignment of objects having struct or union 
+type is supported) 
+ - No automatic garbage collection 
+ - No requirement for bounds checking of arrays 
+ - No operations on whole arrays 
+ - No syntax for ranges, such as the A..B notation used in several 
+languages 
+- Prior to C99, no separate Boolean type (zero/nonzero is used 
+instead)[6] 
+ - No formal closures or functions as parameters (only function 
+and variable pointers) 
+ - No generators or coroutines; intra-thread control flow consists 
+of nested function calls, except for the use of the longjmp or 
+setcontext library functions 
+ - No exception handling; standard library functions signify error 
+conditions with the global errno variable and/or special return 
+values 
+ - Only rudimentary support for modular programming 
+ - No compile-time polymorphism in the form of function or operator 
+overloading 
+ - Only rudimentary support for generic programming 
+ - Very limited support for object-oriented programming with regard 
+to polymorphism and inheritance 
+ - Limited support for encapsulation 
+ - No native support for multithreading and networking 
+ - No standard libraries for computer graphics and several other 
+application programming needs 
+ - A number of these features are available as extensions in some 
+compilers, or can be supplied by third-party libraries, or can be 
+simulated by adopting certain coding disciplines.
+
+

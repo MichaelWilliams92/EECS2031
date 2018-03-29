@@ -1,0 +1,4 @@
+Hello WORLD!
+
+How many continents are there in the world?
+There are 7 continents in the world.

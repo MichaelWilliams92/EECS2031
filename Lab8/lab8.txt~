@@ -1,0 +1,46 @@
+EECS 2031 lab 8 Answers
+Name: Michael Williams
+Student ID: 211087798
+
+1.2)Command used:  echo Hunter Sam B+ Psychology > students-1.txt    
+
+1.3)Commands used: echo Arthur Yang D Chemistry >> students-1.txt
+		   echo breton john A Mathematics >> students-1.txt
+		   echo Edwards Jonathan C Business >> students-1.txt
+
+2.3)Command used:  cat students-1.txt students-2.txt > students.txt
+
+5.1)Command used:  grep -i "Chemistry" students.txt | wc -l
+
+5.2)Command used:  grep " A " students.txt | wc -l
+
+5.3)Command used:  grep ^Yang students.txt | wc -l
+
+6.2)Command used:  ls *ing
+
+6.3)Command used:  ls group*
+
+6.4)Command used:  ls *o*
+
+6.5)Command used:  ls b*ing
+
+6.6)Command used:  ls *[xX]*
+
+6.7)Command used:  ls *ack*
+
+6.8)Command used:  ls b??ing
+
+7.2)Commands used, for textual representation method: chmod u=rwx FILENAME
+		   			       	      chmod g=rx FILENAME
+		  			              chmod o=r FILENAME
+
+    Command used, for numeric representation method: chmod 754 FILENAME 
+
+7.3)Commands used, for textual representation method: chmod u=rw FILENAME
+						      chmod g= FILENAME
+						      chmod o= FILENAME
+
+    Command used, for numeric representation method: chmod 600 FILENAME
+
+
+
